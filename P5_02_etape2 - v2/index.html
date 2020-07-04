@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Générateur de citations - Étape 2</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Happy+Monkey&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="flex-column mx-50">
+
+        <h1>Générateur de citations - Étape 2</h1>
+        <p>Une citation pour une humeur</p>
+
+    </header>
+
+    <section class="main-section flex-column">
+
+        <div class="generator-switch-container flex-row">
+            <span>Optimiste</span>
+            <div class="switch-container">
+                <label class="switch"></span><input type="checkbox" id="generatorToggle">
+                <div></div>
+            </div>
+            <span>Pessimiste</span>
+        </div>
+
+        <p>Choisissez le type de générateur en fonction de votre humeur, le nombre de citations à générer puis cliquez sur "Générer". Le bouton "Effacer" permet de vider le générateur.</p>
+        <div class="generator-options">
+            <ul class="flex-row">
+                <li><label>Nombre de citations (De 1 à 5)</label><input id="quoteQuantity" type="number" value="1" min="1" max="5"></li>
+                <li><button onclick="generateQuote()">Générer</button></li>
+                <li><button onclick="resetGenerator()">Effacer</button></li>
+                </ul>
+            </div>
+
+            <div id="quoteContainer"></div>
+
+    </section>
+
+    <script src="js/custom-js.js"></script>
+
+</body>
+
+</html>
